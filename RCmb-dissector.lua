@@ -320,11 +320,11 @@ end
 
 
 -- load the tcp.port table
-udp_table = DissectorTable.get("tcp.port")
+tcp_table = DissectorTable.get("tcp.port")
 -- register rcmb protocol to handle tcp port 17000, 17001, 17002, 17003, 17004, 17005
-udp_table:add(17000, rcmb_protocol)
-udp_table:add(17001, rcmb_protocol)
-udp_table:add(17002, rcmb_protocol)
-udp_table:add(17003, rcmb_protocol)
-udp_table:add(17004, rcmb_protocol)
-udp_table:add(17005, rcmb_protocol)
+tcp_table:add(17000, rcmb_protocol)
+tcp_table:add(17001, rcmb_protocol)
+tcp_table:add(17002, rcmb_protocol)
+tcp_table:add(17003, rcmb_protocol)
+tcp_table:add(17004, rcmb_protocol)
+tcp_table:add(17005, rcmb_protocol)
